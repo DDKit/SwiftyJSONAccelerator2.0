@@ -1,36 +1,3 @@
-![Logo](https://raw.githubusercontent.com/insanoid/SwiftyJSONAccelerator/master/SwiftyJSONAccelerator/Support/Assets.xcassets/AppIcon.appiconset/Icon_32x32%402x.png)
-
-# SwiftyJSONAccelerator (Model file Generator For Swift 3) macOS app and Command line interface.
-
-[![Build
-Status](https://travis-ci.org/insanoid/SwiftyJSONAccelerator.svg?branch=master)](https://travis-ci.org/insanoid/SwiftyJSONAccelerator) [![codecov](https://codecov.io/gh/insanoid/SwiftyJSONAccelerator/branch/master/graph/badge.svg)](https://codecov.io/gh/insanoid/SwiftyJSONAccelerator)
-
-**Version v1.4.0 Released!**
-
-- Generate models from multiple JSON files in a folder at with one click!
-- CLI interface - JSON to code directly from CLI, [read more about how it works!](#CLI)
-- Removed Cocoapods from the project due to CLI not being able to work with pods, switched to sub-modules.
-- Minor bug fixes.
-- Better installation directly from the repo with `make install`.
-
-[Previous Release Notes](#previous-releases)
-
-## Installing
-
-### App Installation
-
-- **With CLI:** Download the repo, run the script and you are good to go!
-
-  ```
-  git clone https://github.com/insanoid/SwiftyJSONAccelerator.git
-  cd SwiftyJSONAccelerator
-  make install
-  cd ..
-  rm -rf SwiftyJSONAccelerator
-  ```
-
-- **Application Only:** [Download the .app (v1.4.0)](https://github.com/insanoid/SwiftyJSONAccelerator/releases/download/v1.4.0/SwiftyJSONAccelerator.zip)
-
 ## Features
 
 A swift model generator like the Objective-C [JSONAccelerator](http://nerdery.com/json-accelerator). Formats and generates models for the given JSON and also breaks them into files making it easy to manage and share between several models.
