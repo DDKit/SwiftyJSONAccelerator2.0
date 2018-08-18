@@ -237,7 +237,7 @@ struct MultipleModelGenerator {
         let url = URL.init(fileURLWithPath: fromFile)
         do {
             let jsonData = try Data.init(contentsOf: url, options: Data.ReadingOptions.uncached)
-            return JSON.init(data: jsonData)
+            return try JSON.init(data: jsonData)
         } catch {
             return nil
         }
@@ -253,7 +253,7 @@ struct MultipleModelGenerator {
                 modelGroups[key] = [model]
             }
         }
-        return modelGroups.flatMap({ $1 })
+        return modelGroups.compactMap({ $1 })
     }
 
 }

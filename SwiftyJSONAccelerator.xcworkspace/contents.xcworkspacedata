@@ -4,7 +4,4 @@
    <FileRef
       location = "group:SwiftyJSONAccelerator.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Submodules/Nimble/Nimble.xcodeproj">
-   </FileRef>
 </Workspace>

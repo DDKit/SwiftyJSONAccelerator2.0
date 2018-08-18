@@ -25,9 +25,9 @@ class SJTextView: NSTextView {
     self.isAutomaticTextReplacementEnabled = false
   }
 
-  override var readablePasteboardTypes: [String] {
-        return [NSPasteboardTypeString]
-  }
+    override var readablePasteboardTypes: [NSPasteboard.PasteboardType] {
+        return [NSPasteboard.PasteboardType(rawValue: NSPasteboard.PasteboardType.string.rawValue)]
+    }
 
   internal func updateFormat() {
     textStorage?.font = NSFont(name: "Menlo", size: 12)
